@@ -1,0 +1,17 @@
+
+
+<form action='/' method='POST'>
+    {% csrf_token %}
+    <input type='number' name='number1'>
+    <input type='number' name='number2'>
+<button > add </button>
+</form>
+
+
+<div>
+
+    {% for x in data %}
+    {{x.name}}
+    
+    {% endfor %}
+</div>
